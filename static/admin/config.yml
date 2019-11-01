@@ -1,0 +1,120 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/img
+public_folder: /img
+
+site_url: https://elated-almeida-6f5495.netlify.com/
+
+collections:
+  - label: "Projects"
+    name: "projects"
+    folder: "src/markdown/projects"
+    slug: "{{slug}}"
+    create: true
+    fields:
+      - { label: "Project ID", name: "id", widget: "string", plac }
+      - {
+          label: "Project Title",
+          name: "title",
+          widget: "string",
+          required: true,
+        }
+      - {
+          label: "Subtitle",
+          name: "subtitle",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Repository Link",
+          name: "repository",
+          widget: "string",
+          required: false,
+        }
+      - { label: "Demo Link", name: "demo", widget: "string", required: false }
+
+      - {
+          label: "Project Image Desktop",
+          name: "desktopImage",
+          widget: "image",
+          required: true,
+        }
+      - {
+          label: "Image Description",
+          hint: "required for screen readers",
+          name: "imageAltDesktop",
+          widget: "string",
+          required: true,
+        }
+      - { label: "Project Image Mobile", name: "mobileImage", widget: "image" }
+      - {
+          label: "Image Description",
+          hint: "required for screen readers",
+          name: "imageAltMobile",
+          widget: "string",
+          required: true,
+        }
+      - {
+          label: "Project Description",
+          name: "description",
+          widget: "string",
+          required: true,
+        }
+      - { label: "Project Logo", name: "logo", widget: "image", required: true }
+      - {
+          label: "Image Description",
+          hint: "required for screen readers",
+          name: "logoAlt",
+          widget: "string",
+          required: true,
+        }
+      - {
+          label: "Project Hex Code",
+          name: "hex",
+          widget: "string",
+          required: true,
+        }
+      - {
+          label: "Sections",
+          name: "sections",
+          widget: "list",
+          fields:
+            [
+              {
+                label: "Section Title",
+                name: "sectionTitle",
+                widget: "string",
+                required: true,
+              },
+              {
+                label: "Section Images",
+                name: "sectionImages",
+                widget: "list",
+                fields:
+                  [
+                    {
+                      label: "Image",
+                      name: "image",
+                      widget: "image",
+                      required: true,
+                    },
+                    {
+                      label: "Image Label",
+                      name: imageLabel,
+                      hint: "required for screen readers",
+                      required: true,
+                    },
+                    {
+                      label: "ID",
+                      name: "id",
+                      widget: "string",
+                      default: "[section title]000",
+                      required: true,
+                    },
+                  ],
+              },
+            ],
+          required: false,
+        }
