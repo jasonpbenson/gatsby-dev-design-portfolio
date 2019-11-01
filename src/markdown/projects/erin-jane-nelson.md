@@ -1,58 +1,72 @@
 ---
+id: ejn
 title: Erin Jane Nelson
 subtitle: Artist Portfolio
 repository: 'https://github.com/jasonpbenson/EJN-portfolio-site'
 demo: 'https://kind-clarke-8528a2.netlify.com/'
 desktopImage: /img/ejn-landing-edited.min.png
+imageAltDesktop: featured screenshot of landing page
 mobileImage: /img/mobile-ejn-landing-edited.min.png
+imageAltMobile: featured screenshot of landing page for mobile browsers
 description: 'Description forthcoming.. '
 logo: /img/ejn-header.svg
+logoAlt: project logo
 hex: '#d3d7e2'
 sections:
   - sectionImages:
-      - image: /img/moodboard-samples.png
-        undefined: >-
-          Selection of pertinent moodboard assets, including cover images from a
-          feminist speculative sci-fi fan zine – originally called Janus, then
-          renamed to Aurora – that was produced in Madison, WI beginning in the
-          mid-70's; quilt patterns of no specific origin; and the cover of an
-          edition of Donna Haraway's Cyborg Manifesto
+      - id: mood-ejn-001
+        image: /img/moodboard-samples.png
+        imageLabel: moodboard samples
     sectionTitle: Moodboard Samples
   - sectionImages:
-      - image: /img/rorschach-development.min.png
-        undefined: Rorschach icons adapted from shapes in Erin's work
-      - image: /img/landing-icon.min.png
-        undefined: Landing image featuring shaped artwork detail
+      - id: ui-ejn-001
+        image: /img/rorschach-development.min.png
+        imageLabel: ui design asset exploration – rorschach icons
+      - id: ui-ejn-002
+        image: /img/landing-icon.min.png
+        imageLabel: ui design asset exploration – landing page graphic
     sectionTitle: UI asset development
   - sectionImages:
-      - image: /img/ejn-landing-wireframe.png
-        undefined: Landing page
-      - image: /img/ejn-exhibitions-wireframe.png
-        undefined: Exhibition list
-      - image: /img/ejn-exhibition-images-wireframe.png
-        undefined: 'Exhibition '
-      - image: /img/mobile-ejn-wireframe-prototype.png
-        undefined: Mobile
+      - id: wire-ejn-001
+        image: /img/ejn-landing-wireframe.png
+        imageLabel: landing page wireframe
+      - id: wire-ejn-002
+        image: /img/ejn-exhibitions-wireframe.png
+        imageLabel: exhibition list wireframe
+      - id: wire-ejn-003
+        image: /img/ejn-exhibition-images-wireframe.png
+        imageLabel: exhibition details and images page
+      - id: wire-ejn-004
+        image: /img/mobile-ejn-wireframe-prototype.png
+        imageLabel: mobile wireframe flow sequence
     sectionTitle: Wireframe Samples
   - sectionImages:
-      - image: /img/ejn-design-iteration-1.min.png
-        undefined: Iteration 1
-      - image: /img/ejn-design-iteration-2.min.png
-        undefined: Iteration 2
-      - image: /img/ejn-design-iteration-3.min.png
-        undefined: Iteration 3
+      - id: des-ejn-001
+        image: /img/ejn-design-iteration-1.min.png
+        imageLabel: landing page design iteration 1
+      - id: des-ejn-002
+        image: /img/ejn-design-iteration-2.min.png
+        imageLabel: landing page design iteration 2
+      - id: des-ejn-003
+        image: /img/ejn-design-iteration-3.min.png
+        imageLabel: landing page design iteration 3
     sectionTitle: Design iteration
   - sectionImages:
-      - image: /img/ejn-exhibition-list-edited.min.png
-        undefined: Exhibition list
-      - image: /img/ejn-exhibition-edited-2.min.png
-        undefined: Exhibition page
-      - image: /img/mobile-ejn-exhibition-edited.png
-        undefined: Mobile exhibition page
-      - image: /img/mobile-ejn-menu-edited.min.png
-        undefined: Mobile menu
-      - image: /img/ejn-404-edited.min.png
-        undefined: '404'
+      - id: fin-ejn-001
+        image: /img/ejn-exhibition-list-edited.min.png
+        imageLabel: screenshot of exhibition list page
+      - id: fin-ejn-002
+        image: /img/ejn-exhibition-edited-2.min.png
+        imageLabel: screenshot exhibition details and images page
+      - id: fin-ejn-003
+        image: /img/mobile-ejn-exhibition-edited.png
+        imageLabel: screenshot of exhibition details and images page for mobile browsers
+      - id: fin-ejn-004
+        image: /img/mobile-ejn-menu-edited.min.png
+        imageLabel: screenshot of mobile menu
+      - id: fin-ejn-005
+        image: /img/ejn-404-edited.min.png
+        imageLabel: screenshot of 404 page
     sectionTitle: Final
 ---
 
