@@ -1,6 +1,7 @@
 ---
 id: '002'
 title: Enchanted Life Goods
+subtitle: 'ecommerce '
 repository: 'https://github.com/jasonpbenson/enchantedLifeGoods'
 desktopImage: /img/elg-landing.min.png
 imageAltDesktop: featured screenshot of landing page

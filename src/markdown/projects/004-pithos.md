@@ -2,6 +2,7 @@
 templateKey: project
 id: '004'
 title: Pithos
+subtitle: information
 repository: 'https://github.com/jasonpbenson/Pithos'
 demo: 'https://pithos.jpbenson.com/'
 desktopImage: /img/pithos-landing.png

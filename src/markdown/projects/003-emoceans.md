@@ -2,7 +2,7 @@
 templateKey: project
 id: '003'
 title: emOceans
-subtitle: ''
+subtitle: mood tracking app
 repository: 'https://github.com/jasonpbenson/backEndProject'
 demo: 'https://emoceans.jpbenson.com/'
 desktopImage: /img/em0c-mood-edit.png
