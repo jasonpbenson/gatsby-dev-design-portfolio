@@ -66,6 +66,7 @@ const ProjectTemplate = ({ data, pageContext }) => {
     .mobile {
       margin-right: 1rem;
       margin-top: -3rem;
+      max-height: 480px;
       width: 28%;
     }
     img {
@@ -84,13 +85,21 @@ const ProjectTemplate = ({ data, pageContext }) => {
         <h3>{project.frontmatter.subtitle}</h3>
         <HeaderLinks>
           {project.frontmatter.demo != null ? (
-            <a href={project.frontmatter.demo}>
+            <a
+              href={project.frontmatter.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <h4>demo</h4>
             </a>
           ) : (
             <div className="demo-null"></div>
           )}
-          <a href={project.frontmatter.repository}>
+          <a
+            href={project.frontmatter.repository}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <h4>repo</h4>
           </a>
         </HeaderLinks>
@@ -132,7 +141,6 @@ export const query = graphql`
         mobileImage
         repository
         subtitle
-        templateKey
         title
       }
     }
