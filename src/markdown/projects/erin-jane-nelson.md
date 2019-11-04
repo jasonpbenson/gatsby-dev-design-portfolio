@@ -1,5 +1,5 @@
 ---
-id: project-001
+id: '001'
 title: Erin Jane Nelson
 subtitle: Artist Portfolio
 repository: 'https://github.com/jasonpbenson/EJN-portfolio-site'
