@@ -1,6 +1,6 @@
 ---
 templateKey: project
-id: project-004
+id: '004'
 title: Pithos
 repository: 'https://github.com/jasonpbenson/Pithos'
 demo: 'https://pithos.jpbenson.com/'
