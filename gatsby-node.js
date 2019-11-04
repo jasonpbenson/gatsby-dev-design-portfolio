@@ -19,18 +19,17 @@ exports.createPages = ({ graphql, actions }) => {
     {
       allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/projects/" } }
-        sort: { fields: id, order: DESC }
+        sort: { fields: frontmatter___id, order: ASC }
       ) {
         edges {
           node {
-            id
             fields {
               slug
             }
             frontmatter {
+              title
               templateKey
               hex
-              title
             }
           }
         }

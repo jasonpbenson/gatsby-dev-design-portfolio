@@ -11,7 +11,7 @@ collections:
   - label: "Projects"
     name: "projects"
     folder: "src/markdown/projects"
-    slug: "{{slug}}"
+    slug: "{{id}}-{{slug}}"
     create: true
     fields:
       - {

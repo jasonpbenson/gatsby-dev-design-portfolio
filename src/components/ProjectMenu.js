@@ -15,6 +15,7 @@ const ProjectMenu = () => {
               id
               logo
               logoAlt
+              hex
             }
           }
         }
@@ -22,27 +23,41 @@ const ProjectMenu = () => {
     }
   `)
 
-  const allProjects = data.allMarkdownRemark.edges
+  const projectData = data.allMarkdownRemark.edges
+  console.log(projectData)
 
   const ProjectMenuStyles = styled.div`
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: 6rem auto;
-    width: 60vw;
+    margin: 3rem auto;
+    width: 70vw;
   `
-  const ProjectCard = styled.div``
+  const ProjectCard = styled.div`
+    align-items: center;
+    border: 2px dashed #000;
+    display: flex;
+    height: 12rem;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 40%;
+    img {
+      max-height: 100px;
+    }
+  `
+
   return (
     <ProjectMenuStyles>
-      {allProjects.map(({ node }) => {
+      {projectData.map(({ node }) => {
         return (
-          <ProjectCard key={node.frontmatter.id}>
+          <ProjectCard
+            key={node.frontmatter.id}
+            style={{ backgroundColor: node.frontmatter.hex }}
+          >
             <Link to={node.fields.slug}>
-              <img
-                src={node.frontmatter.logo}
-                alt={node.frontmatter.logoAlt}
-                style={{ maxWidth: "250px" }}
-              />
+              <img src={node.frontmatter.logo} alt={node.frontmatter.logoAlt} />
             </Link>
           </ProjectCard>
         )
