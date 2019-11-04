@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { useLocalState } from "../hooks/hooks"
 
 const ThemeIcon = () => {
-  const [theme, setTheme] = useLocalState("theme" || "themeLight")
+  const [theme, setTheme] = useLocalState("themeLight")
 
   useEffect(() => {
     console.log("ThemeIcon: ", theme)
