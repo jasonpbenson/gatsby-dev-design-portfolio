@@ -1,3 +1,9 @@
 import React from "react"
 
-export default () => <div>Hello world!</div>
+import ProjectMenu from "../components/ProjectMenu"
+
+export default () => (
+  <div>
+    <ProjectMenu />
+  </div>
+)

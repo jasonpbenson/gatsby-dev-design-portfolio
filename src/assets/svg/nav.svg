@@ -1,0 +1,27 @@
+<svg id="nav-icon" xmlns="http://www.w3.org/2000/svg" width="232" height="64" viewBox="0 0 232 64">
+  <g id="Group_48" data-name="Group 48" transform="translate(168)">
+    <g id="Rectangle_9" data-name="Rectangle 9" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="5">
+      <rect width="64" height="64" stroke="none"/>
+      <rect x="1" y="1" width="62" height="62" fill="none"/>
+    </g>
+    <g id="Forward_arrow" data-name="Forward arrow" transform="translate(14.267 13.873)">
+      <path id="Path_10" data-name="Path 10" d="M18.069,0,14.784,3.285,27.221,15.722H0v4.693H27.221L14.784,32.852l3.285,3.285L36.138,18.069Z"/>
+    </g>
+  </g>
+  <g id="Group_47" data-name="Group 47" transform="translate(-14 -988)">
+    <g id="Rectangle_9-2" data-name="Rectangle 9" transform="translate(98 988)" fill="#e5e5e5" stroke="#333" stroke-width="2" stroke-dasharray="5">
+      <rect width="64" height="64" stroke="none"/>
+      <rect x="1" y="1" width="62" height="62" fill="none"/>
+    </g>
+    <text id="h" transform="translate(130 1037)" font-size="48" font-family="RedHatText-Bold, Red Hat Text" font-weight="700"><tspan x="-14.832" y="0">h</tspan></text>
+  </g>
+  <g id="Group_49" data-name="Group 49">
+    <g id="Rectangle_9-3" data-name="Rectangle 9" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="5">
+      <rect width="64" height="64" stroke="none"/>
+      <rect x="1" y="1" width="62" height="62" fill="none"/>
+    </g>
+    <g id="Forward_arrow-2" data-name="Forward arrow" transform="translate(13.596 13.873)">
+      <path id="Path_10-2" data-name="Path 10" d="M18.069,0l3.285,3.285L8.917,15.722H36.138v4.693H8.917L21.354,32.852l-3.285,3.285L0,18.069Z"/>
+    </g>
+  </g>
+</svg>

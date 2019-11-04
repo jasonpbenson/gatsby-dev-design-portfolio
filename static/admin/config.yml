@@ -14,6 +14,12 @@ collections:
     slug: "{{slug}}"
     create: true
     fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "project",
+        }
       - { label: "Project ID", name: "id", widget: "string", plac }
       - {
           label: "Project Title",
@@ -31,7 +37,7 @@ collections:
           label: "Repository Link",
           name: "repository",
           widget: "string",
-          required: false,
+          required: true,
         }
       - { label: "Demo Link", name: "demo", widget: "string", required: false }
 
@@ -115,6 +121,38 @@ collections:
                     },
                   ],
               },
+            ],
+          required: false,
+        }
+  - label: "Information Pages"
+    name: "infoPages"
+    create: true
+    folder: "src/markdown/non-project-pages"
+    slug: "{{slug}}"
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "infoPage",
+        }
+      - {
+          label: "Page Title",
+          name: "pageTitle",
+          widget: "string",
+          required: true,
+        }
+      - { label: "Page ID", name: "pageId", widget: "string", required: true }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Dev Icons",
+          name: "icons",
+          widget: "list",
+          fields:
+            [
+              { label: "Icon Name", name: "iconName", widget: "string" },
+              { label: "Icon Category", name: "category", widget: "string" },
+              { label: "Icon", name: "icon", widget: "string" },
             ],
           required: false,
         }
