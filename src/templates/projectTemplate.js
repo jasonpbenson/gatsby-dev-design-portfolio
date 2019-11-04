@@ -141,7 +141,6 @@ export const query = graphql`
         mobileImage
         repository
         subtitle
-        templateKey
         title
       }
     }
