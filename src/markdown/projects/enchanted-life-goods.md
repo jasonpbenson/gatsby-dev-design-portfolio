@@ -1,5 +1,5 @@
 ---
-id: elg
+id: project-002
 title: Enchanted Life Goods
 repository: 'https://github.com/jasonpbenson/enchantedLifeGoods'
 desktopImage: /img/elg-landing.min.png
