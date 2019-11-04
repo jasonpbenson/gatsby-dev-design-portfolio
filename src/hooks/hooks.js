@@ -6,8 +6,10 @@ export function useLocalState(localItem, initialState) {
   )
 
   function setLocalState(newItem) {
-    localStorage.setItem(localItem, newItem)
-    setState(newItem)
+    if (typeof window !== "undefined") {
+      localStorage.setItem(localItem, newItem)
+      setState(newItem)
+    }
   }
 
   return [local, setLocalState]
