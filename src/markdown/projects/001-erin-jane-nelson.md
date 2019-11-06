@@ -9,7 +9,7 @@ imageAltDesktop: featured screenshot of landing page
 mobileImage: /img/mobile-ejn-landing-edited.min.png
 imageAltMobile: featured screenshot of landing page for mobile browsers
 description: 'Description forthcoming.. '
-logo: /img/ejn-header.svg
+logo: /img/ejn-header.png
 logoAlt: project logo
 hex: '#d3d7e2'
 sections:
