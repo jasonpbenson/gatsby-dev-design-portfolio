@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useLayoutEffect } from "react"
 import styled from "styled-components"
 
 import useLocalState from "../hooks/hooks"
@@ -9,7 +9,7 @@ import ThemeIcon from "./ThemeIcon"
 
 const Layout = ({ children }) => {
   const [theme, setTheme] = useLocalState("theme")
-  useEffect(() => {
+  useLayoutEffect(() => {
     console.log("Layout...theme updated: ", theme)
   }, [theme, setTheme])
 
@@ -33,12 +33,16 @@ const Layout = ({ children }) => {
       ? "#e5e5e5"
       : currentTheme === "themeGrey"
       ? "#777777"
-      : "#000000"};
+      : currentTheme === "themeDark"
+      ? "#000000"
+      : "#e5e5e5"};
     color: ${currentTheme === "themeLight"
       ? "#000"
       : currentTheme === "themeGrey"
       ? "#333333"
-      : "#E5E5E5"};
+      : currentTheme === "themeDark"
+      ? "#E5E5E5"
+      : "#000"};
     height: 100vh;
     margin: 0;
     overflow: hidden;
