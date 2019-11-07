@@ -23,7 +23,9 @@ const Layout = ({ children }) => {
     setTheme("themeDark")
   }
 
-  const currentTheme = theme
+  const currentTheme =
+    typeof window !== "undefined" ? localStorage.theme : theme
+
   console.log("Layout...currentTheme: ", currentTheme)
 
   const LayoutContainer = styled.div`
