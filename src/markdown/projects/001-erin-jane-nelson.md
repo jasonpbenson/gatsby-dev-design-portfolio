@@ -10,7 +10,7 @@ mobileImage: /img/mobile-ejn-landing-edited.min.png
 imageAltMobile: featured screenshot of landing page for mobile browsers
 description: >-
   Built with Gatsby, Netlify, Netlify CMS, and React. Responsible for all phases
-  design and development iteration
+  design and development iteration.
 logo: /img/ejn-header.png
 logoAlt: project logo
 hex: '#d3d7e2'
