@@ -10,7 +10,7 @@ import ThemeIcon from "./ThemeIcon"
 const initialTheme = "themeLight"
 
 const Layout = ({ children }) => {
-  const [theme, setTheme] = useLocalState(localStorage.theme || initialTheme)
+  const [theme, setTheme] = useLocalState(initialTheme)
   useEffect(() => {
     console.log("theme updated: ", theme)
   }, [theme, setTheme])
