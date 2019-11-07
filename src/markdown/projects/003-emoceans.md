@@ -10,11 +10,10 @@ imageAltDesktop: project home page
 mobileImage: /img/mobile-em0c-landing.png
 imageAltMobile: mobile home page
 description: >-
-  emOceans is a simple web application that allows you to take note of your mood
-  every day using color and language. Each day (and each mood, each memory)
-  forms a tiny drop in the vast and ever-shifting ocean that is every human. We
-  hope to make the observation and appreciation of those shifts and waves more
-  accessible, helpful, and more beautiful.
+  Built with EJS, Express, and MySQL in collaboration with Katie Duane and
+  Christopher Soltis. Responsible for UI/UX design – including wireframes,
+  prototypes, fonts, colors, image editing, and logo design – and full-stack
+  development.
 logo: /img/emoceans-logo.min.svg
 logoAlt: project logo
 hex: '#C6C0E6'
