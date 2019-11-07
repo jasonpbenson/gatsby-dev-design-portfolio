@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="167" viewBox="0 0 160 167">
+  <g id="Group_51" data-name="Group 51" transform="translate(-387 -154.045)">
+    <g id="Group_33" data-name="Group 33" transform="translate(387 154)">
+      <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(0 7.045)" fill="#e5e5e5" stroke="#000" stroke-width="5">
+        <circle cx="80" cy="80" r="80" stroke="none"/>
+        <circle cx="80" cy="80" r="77.5" fill="none"/>
+      </g>
+      <text id="i" transform="translate(94 128.045)" font-size="126" font-family="RedHatText-BoldItalic, Red Hat Text" font-weight="700" font-style="italic"><tspan x="-35.658" y="0">i</tspan></text>
+    </g>
+  </g>
+</svg>

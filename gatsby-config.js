@@ -28,13 +28,6 @@ module.exports = {
         name: "image-uploads",
       },
     },
-    // {
-    //   resolve: "gatsby-source-filesystem",
-    //   options: {
-    //     path: `${__dirname}/src/assets/images`,
-    //     name: "image-assets",
-    //   },
-    // },
     "gatsby-transformer-remark",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",

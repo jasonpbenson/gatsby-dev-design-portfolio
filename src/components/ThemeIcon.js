@@ -1,24 +1,38 @@
-import React, { useEffect } from "react"
+import React from "react"
 import styled from "styled-components"
 
-import { useLocalState } from "../hooks/hooks"
-
-const ThemeIcon = () => {
-  const [theme, setTheme] = useLocalState("themeLight")
-
-  useEffect(() => {
-    console.log("ThemeIcon: ", theme)
-  })
-
+const ThemeIcon = props => {
+  console.log(props)
   const ThemeIconSyles = styled.div`
-    width: fit-content;
+    left: 8%;
+    position: fixed;
+    top: -0.5rem;
+    width: auto;
+    z-index: 300;
     svg {
       overflow: visible;
-      padding-right: 1rem;
       transform: scale(0.7);
     }
     path {
       cursor: pointer;
+    }
+    @media (max-width: 980px) {
+      left: 10%;
+      top: 0.5rem;
+    }
+    @media (max-width: 650px) {
+      left: 75%;
+      top: 84%;
+      svg {
+        transform: scale(0.8);
+      }
+    }
+    @media (max-width: 375px) {
+      left: 65%;
+      top: 82%;
+      svg {
+        transform: scale(0.9);
+      }
     }
   `
   return (
@@ -35,18 +49,18 @@ const ThemeIcon = () => {
             d="M170.419,31.372c17.847-5.264,31.322-12.937,28.889-21.169S165.423-3.12,147.57,2.147,132.228,21.04,134.656,29.272,152.562,36.643,170.419,31.372Z"
             transform="translate(-84.194 -3)"
             fill="#000"
-            stroke="#000"
+            stroke="#777"
             strokeWidth="2"
-            onClick={() => setTheme("themeDark")}
+            onClick={props.darkMode}
           />
           <path
             id="shapeGrey"
             d="M139.109,129.9c-2.172,8.734,21.762,11.723,43.257,17.079s39.829,6.091,42.005-2.643,4-23.167-17.5-28.523S141.285,121.173,139.109,129.9Z"
             transform="translate(-72.644 -84.421)"
             fill="#777"
-            stroke="#777"
+            stroke="#e5e5e5"
             strokeWidth="2"
-            onClick={() => setTheme("themeGrey")}
+            onClick={props.greyMode}
           />
           <path
             id="shapeLight"
@@ -55,7 +69,7 @@ const ThemeIcon = () => {
             fill="#e5e5e5"
             stroke="#000"
             strokeWidth="2"
-            onClick={() => setTheme("themeLight")}
+            onClick={props.lightMode}
           />
         </g>
       </svg>

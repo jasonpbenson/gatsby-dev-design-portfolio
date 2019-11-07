@@ -2,14 +2,15 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-import ThemeIcon from "./ThemeIcon"
 const HeaderSyles = styled.div`
+  align-items: baseline;
+  background-color: inherit;
   display: flex;
-  align-items: center;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
-  max-height: 120px;
-  position: fixed
+  height: 10%;
+  justify-content: space-between;
+  padding: 2rem 10% 0 40%;
+  position: fixed;
   width: 100%;
   z-index: 100;
   a {
@@ -22,12 +23,22 @@ const HeaderSyles = styled.div`
   }
   h2 {
     font-size: 22px;
-    font-weight: normal;
   }
-  h1,
-  h2 {
-    margin-bottom: 0;
-    padding-bottom: 1rem;
+  }
+  @media (max-width: 980px) {
+    align-items: flex-end;
+    flex-flow: column;
+    justify-content: end;
+    padding-left: 0;
+    h1{
+      margin: 0;
+    }
+    h2{
+      margin-top: .2rem;
+    }
+  }
+  @media (max-width: 500px) {
+    display: none;
   }
 `
 const Header = () => {
@@ -39,7 +50,6 @@ const Header = () => {
       <h2>
         <Link to="/information">information</Link>
       </h2>
-      <ThemeIcon />
     </HeaderSyles>
   )
 }

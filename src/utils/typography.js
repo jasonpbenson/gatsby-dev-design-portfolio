@@ -17,6 +17,9 @@ const typography = new Typography({
     h2: {
       fontFamily: ["Ramabhadra", "sans-serif"].join(","),
     },
+    h3: {
+      fontFamily: ["Ramabhadra", "sans-serif"].join(","),
+    },
     h4: {
       fontFamily: ["Ramabhadra", "sans-serif"].join(","),
     },
