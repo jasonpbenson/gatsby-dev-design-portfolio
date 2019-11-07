@@ -59,9 +59,8 @@ const ProjectMenu = () => {
     transition: filter 1s;
     width: 40%;
     :hover {
-      filter: hue-rotate(90deg);
+      filter: hue-rotate(180deg);
     }
-
     img {
       left: 50%;
       max-height: 50%;

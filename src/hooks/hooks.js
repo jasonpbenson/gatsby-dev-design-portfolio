@@ -1,8 +1,10 @@
 import { useState } from "react"
 
-export default function useLocalState(localItem) {
+export default function useLocalState(localItem, initialItem) {
   const [local, setState] = useState(
-    typeof window !== "undefined" ? localStorage.getItem(localItem) : ""
+    typeof window !== "undefined"
+      ? localStorage.getItem(localItem)
+      : initialItem
   )
 
   function setLocalState(newItem) {

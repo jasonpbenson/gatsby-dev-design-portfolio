@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-import MobileButton from "../assets/icons/mobile-info-icon.png"
+import MobileButton from "../assets/icons/mobile-info-icon.svg"
 
 const MobileHeaderSyles = styled.div`
   display: none;

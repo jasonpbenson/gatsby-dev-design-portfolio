@@ -78,7 +78,7 @@ const ProjectTemplate = ({ data, pageContext }) => {
       transition: filter 1s;
     }
     h4:hover {
-      filter: hue-rotate(90deg);
+      filter: hue-rotate(180deg);
     }
     .demo-null {
       display: hidden;

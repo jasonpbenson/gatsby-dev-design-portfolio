@@ -7,8 +7,10 @@ import Header from "./Header"
 import MobileHeader from "./MobileHeader"
 import ThemeIcon from "./ThemeIcon"
 
+const initialTheme = "themeLight"
+
 const Layout = ({ children }) => {
-  const [theme, setTheme] = useLocalState("themeLight")
+  const [theme, setTheme] = useLocalState(localStorage.theme || initialTheme)
   useEffect(() => {
     console.log("theme updated: ", theme)
   }, [theme, setTheme])
