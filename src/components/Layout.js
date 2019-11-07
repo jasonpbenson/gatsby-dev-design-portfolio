@@ -10,8 +10,7 @@ import ThemeIcon from "./ThemeIcon"
 const Layout = ({ children }) => {
   const [theme, setTheme] = useLocalState("theme")
   useEffect(() => {
-    console.log("theme updated: ", theme)
-    console.log("localStorage: ", localStorage)
+    console.log("Layout...theme updated: ", theme)
   }, [theme, setTheme])
 
   const lightMode = () => {
@@ -24,15 +23,18 @@ const Layout = ({ children }) => {
     setTheme("themeDark")
   }
 
+  const currentTheme = theme
+  console.log("Layout...currentTheme: ", currentTheme)
+
   const LayoutContainer = styled.div`
-    background-color: ${theme === "themeLight" || null
+    background-color: ${currentTheme === "themeLight" || null
       ? "#e5e5e5"
-      : theme === "themeGrey"
+      : currentTheme === "themeGrey"
       ? "#777777"
       : "#000000"};
-    color: ${theme === "themeLight"
+    color: ${currentTheme === "themeLight"
       ? "#000"
-      : theme === "themeGrey"
+      : currentTheme === "themeGrey"
       ? "#333333"
       : "#E5E5E5"};
     height: 100vh;

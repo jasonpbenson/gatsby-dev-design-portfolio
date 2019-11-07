@@ -8,6 +8,7 @@ export default function useLocalState(localItem) {
   function setLocalState(newItem) {
     if (typeof window !== "undefined") {
       localStorage.setItem(localItem, newItem)
+      console.log("hooks...localStorage: ", localStorage)
       setState(newItem)
     }
   }

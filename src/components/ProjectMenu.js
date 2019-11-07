@@ -27,7 +27,6 @@ const ProjectMenu = () => {
   `)
 
   const projectData = data.allMarkdownRemark.edges
-  console.log(projectData)
 
   const ProjectMenuStyles = styled.div`
     align-items: center;
