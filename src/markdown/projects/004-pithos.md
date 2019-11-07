@@ -10,11 +10,10 @@ imageAltDesktop: project landing
 mobileImage: /img/mobile-pithos-landing.png
 imageAltMobile: mobile landing
 description: >-
-  We wanted to create a space that would allow the user to experience an
-  ordinary thing in an unusual way. We were interested in ecosystems, and wanted
-  to connect our ecosystem to the state of Georgia (home), and also the larger
-  realms of history, mythology, and health; which are their own kinds of
-  ecosystems, or containers. Pithos.
+  Built with CSS, HTML, JavaScript, and jQuery in collaboration with Katie Duane
+  and Jim Owens. Responsible for UI/UX design – including wireframes,
+  prototypes, fonts, colors, image editing, and logo design – and front-end
+  development.
 logo: /img/pithos-logo.svg
 logoAlt: project logo
 hex: '#CBE1D9'
