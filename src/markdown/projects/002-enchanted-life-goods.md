@@ -7,7 +7,9 @@ desktopImage: /img/elg-landing.min.png
 imageAltDesktop: featured screenshot of landing page
 mobileImage: /img/mobile-elg-landing.min.png
 imageAltMobile: featured screenshot of landing page for mobile browsers
-description: Description forthcoming
+description: >-
+  Built with Express, PostgreSQL, and React. Responsible for all phases design
+  and development iteration.
 logo: /img/logo.svg
 logoAlt: project logo
 hex: '#e5ddbe'
