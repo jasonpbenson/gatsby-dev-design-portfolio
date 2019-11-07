@@ -10,7 +10,7 @@ const ThemeIcon = props => {
     z-index: 300;
     svg {
       overflow: visible;
-      transform: scale(0.7);
+      transform: scale(0.6);
     }
     path {
       cursor: pointer;

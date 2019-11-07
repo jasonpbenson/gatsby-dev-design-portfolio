@@ -140,11 +140,11 @@ const ProjectTemplate = ({ data, pageContext }) => {
     }
     p {
       font-size: 1.1rem;
-      left: 2%;
+      left: 5%;
       position: absolute;
-      text-align: center;
+      text-align: left;
       top: 75%;
-      width: 60%;
+      width: 50%;
     }
     @media (max-width: 980px) {
       width: 95%;

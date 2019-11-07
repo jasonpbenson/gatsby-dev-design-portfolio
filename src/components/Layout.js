@@ -1,17 +1,18 @@
-import React, { useLayoutEffect } from "react"
+import React from "react"
 import styled from "styled-components"
 
-import useLocalState from "../hooks/hooks"
+import useLocalStorage from "react-use-localstorage"
+
+// import useLocalState from "../hooks/hooks"
 
 import Header from "./Header"
 import MobileHeader from "./MobileHeader"
 import ThemeIcon from "./ThemeIcon"
 
 const Layout = ({ children }) => {
-  const [theme, setTheme] = useLocalState("theme")
-  useLayoutEffect(() => {
-    console.log("Layout...theme updated: ", theme)
-  }, [theme, setTheme])
+  const [theme, setTheme] = useLocalStorage("theme", "Initial Theme")
+
+  console.log("Layout...theme: ", theme)
 
   const lightMode = () => {
     setTheme("themeLight")
@@ -24,25 +25,23 @@ const Layout = ({ children }) => {
   }
 
   const currentTheme =
-    typeof window !== "undefined" ? localStorage.theme : theme
-
-  console.log("Layout...currentTheme: ", currentTheme)
+    typeof window !== "undefined" && window ? localStorage.theme : theme
 
   const LayoutContainer = styled.div`
-    background-color: ${currentTheme === "themeLight" || null
+    background-color: ${currentTheme === "themeLight"
       ? "#e5e5e5"
       : currentTheme === "themeGrey"
       ? "#777777"
       : currentTheme === "themeDark"
       ? "#000000"
       : "#e5e5e5"};
-    color: ${currentTheme === "themeLight"
+    color: ${theme === "themeLight"
       ? "#000"
-      : currentTheme === "themeGrey"
+      : theme === "themeGrey"
       ? "#333333"
       : currentTheme === "themeDark"
       ? "#E5E5E5"
-      : "#000"};
+      : "e5e5e5"};
     height: 100vh;
     margin: 0;
     overflow: hidden;
