@@ -11,9 +11,8 @@ const Layout = ({ children }) => {
   const [theme, setTheme] = useLocalState("theme")
   useEffect(() => {
     console.log("theme updated: ", theme)
+    console.log("localStorage: ", localStorage)
   }, [theme, setTheme])
-
-  // console.log("localStorage: ", localStorage)
 
   const lightMode = () => {
     setTheme("themeLight")
