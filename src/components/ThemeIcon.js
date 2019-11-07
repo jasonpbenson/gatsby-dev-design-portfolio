@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 
 const ThemeIcon = props => {
-  console.log(props)
   const ThemeIconSyles = styled.div`
     left: 8%;
     position: fixed;

@@ -7,15 +7,13 @@ import Header from "./Header"
 import MobileHeader from "./MobileHeader"
 import ThemeIcon from "./ThemeIcon"
 
-const initialTheme = "themeLight"
-
 const Layout = ({ children }) => {
-  const [theme, setTheme] = useLocalState(initialTheme)
+  const [theme, setTheme] = useLocalState("theme")
   useEffect(() => {
     console.log("theme updated: ", theme)
   }, [theme, setTheme])
 
-  console.log(theme)
+  console.log("localStorage: ", localStorage)
 
   const lightMode = () => {
     setTheme("themeLight")
@@ -27,18 +25,15 @@ const Layout = ({ children }) => {
     setTheme("themeDark")
   }
 
-  const currentTheme = theme
-  console.log("current theme: ", currentTheme)
-
   const LayoutContainer = styled.div`
-    background-color: ${currentTheme === "themeLight"
+    background-color: ${theme === "themeLight" || null
       ? "#e5e5e5"
-      : currentTheme === "themeGrey"
+      : theme === "themeGrey"
       ? "#777777"
       : "#000000"};
-    color: ${currentTheme === "themeLight"
+    color: ${theme === "themeLight"
       ? "#000"
-      : currentTheme === "themeGrey"
+      : theme === "themeGrey"
       ? "#333333"
       : "#E5E5E5"};
     height: 100vh;
