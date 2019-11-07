@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
     console.log("theme updated: ", theme)
   }, [theme, setTheme])
 
-  console.log("localStorage: ", localStorage)
+  // console.log("localStorage: ", localStorage)
 
   const lightMode = () => {
     setTheme("themeLight")
