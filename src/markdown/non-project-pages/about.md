@@ -1,6 +1,6 @@
 ---
 templateKey: infoPageTemplate
-title: About
+title: Information
 pageId: info001
 ---
 
