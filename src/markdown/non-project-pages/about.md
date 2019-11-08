@@ -1,6 +1,6 @@
 ---
 templateKey: infoPage
-title: About
+title: Information
 pageId: info001
 ---
 designer/developer, atlanta ga
