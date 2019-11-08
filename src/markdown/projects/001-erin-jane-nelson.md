@@ -1,10 +1,10 @@
 ---
 templateKey: projectTemplate
-id: "001"
+id: '001'
 title: Erin Jane Nelson
 subtitle: Artist Portfolio
-repository: "https://github.com/jasonpbenson/EJN-portfolio-site"
-demo: "https://kind-clarke-8528a2.netlify.com/"
+repository: 'https://github.com/jasonpbenson/EJN-portfolio-site'
+demo: 'https://erin-jane-nelson.netlify.com/'
 desktopImage: /img/ejn-landing-edited.min.png
 imageAltDesktop: featured screenshot of landing page
 mobileImage: /img/mobile-ejn-landing-edited.min.png
@@ -14,7 +14,7 @@ description: >-
   design and development iteration.
 logo: /img/ejn-header.png
 logoAlt: project logo
-hex: "#d3d7e2"
+hex: '#d3d7e2'
 sections:
   - sectionImages:
       - id: mood-ejn-001
@@ -72,3 +72,4 @@ sections:
         imageLabel: screenshot of 404 page
     sectionTitle: Final
 ---
+
