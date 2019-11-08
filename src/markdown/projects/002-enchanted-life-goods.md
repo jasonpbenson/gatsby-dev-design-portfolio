@@ -1,8 +1,9 @@
 ---
-id: '002'
+templateKey: projectTemplate
+id: "002"
 title: Enchanted Life Goods
-subtitle: 'ecommerce '
-repository: 'https://github.com/jasonpbenson/enchantedLifeGoods'
+subtitle: "ecommerce "
+repository: "https://github.com/jasonpbenson/enchantedLifeGoods"
 desktopImage: /img/elg-landing.min.png
 imageAltDesktop: featured screenshot of landing page
 mobileImage: /img/mobile-elg-landing.min.png
@@ -12,7 +13,7 @@ description: >-
   and development iteration.
 logo: /img/logo.svg
 logoAlt: project logo
-hex: '#e5ddbe'
+hex: "#e5ddbe"
 sections:
   - sectionImages:
       - id: elg-fin-001
@@ -41,4 +42,3 @@ sections:
         imageLabel: screenshot of information page for mobile browsers
     sectionTitle: Finals
 ---
-

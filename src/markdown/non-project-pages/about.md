@@ -1,8 +1,9 @@
 ---
-templateKey: infoPage
+templateKey: infoPageTemplate
 title: About
 pageId: info001
 ---
+
 designer/developer, atlanta ga
 
 jasonbenson3rd@gmail.com

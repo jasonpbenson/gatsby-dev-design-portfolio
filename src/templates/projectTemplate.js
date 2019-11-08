@@ -139,15 +139,23 @@ const ProjectTemplate = ({ data, pageContext }) => {
       margin-bottom: 0;
     }
     p {
-      font-size: 1.1rem;
-      left: 5%;
+      font-size: 18px;
+      left: 8%;
       position: absolute;
       text-align: left;
       top: 75%;
-      width: 50%;
+      width: 44%;
     }
     @media (max-width: 980px) {
       width: 95%;
+      p {
+        left: 7%;
+      }
+    }
+    @media (max-width: 800px) {
+      p {
+        top: 80%;
+      }
     }
     @media (max-width: 650px) {
       align-items: center;
@@ -157,8 +165,12 @@ const ProjectTemplate = ({ data, pageContext }) => {
         width: 88%;
       }
       p {
+        align-self: flex-start;
+        margin-left: 10%;
+        margin-top: 1%;
         position: static;
-        width: 78%;
+        text-align: center;
+        width: 70%;
       }
       .mobile-image {
         display: none;

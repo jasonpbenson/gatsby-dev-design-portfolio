@@ -1,10 +1,10 @@
 ---
-templateKey: project
-id: '004'
+templateKey: projectTemplate
+id: "004"
 title: Pithos
-subtitle: 'pi·​thos | ˈpiˌthäs, ˈpī'
-repository: 'https://github.com/jasonpbenson/Pithos'
-demo: 'https://pithos.jpbenson.com/'
+subtitle: "pi·​thos | ˈpiˌthäs, ˈpī"
+repository: "https://github.com/jasonpbenson/Pithos"
+demo: "https://pithos.jpbenson.com/"
 desktopImage: /img/pithos-landing.png
 imageAltDesktop: project landing
 mobileImage: /img/mobile-pithos-landing.png
@@ -16,7 +16,7 @@ description: >-
   development.
 logo: /img/pithos-logo.svg
 logoAlt: project logo
-hex: '#CBE1D9'
+hex: "#CBE1D9"
 sections:
   - sectionImages:
       - id: pith-fin-001
@@ -36,4 +36,3 @@ sections:
         imageLabel: mobile information modal
     sectionTitle: Finals
 ---
-

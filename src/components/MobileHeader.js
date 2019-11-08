@@ -47,7 +47,7 @@ const MobileHeader = () => {
       <Link to="/">
         <h1>jason paul benson</h1>
       </Link>
-      <Link to="/information">
+      <Link to="/Information">
         <img src={MobileButton} alt="mobile info button" />
       </Link>
     </MobileHeaderSyles>

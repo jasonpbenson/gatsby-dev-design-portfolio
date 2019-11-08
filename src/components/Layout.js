@@ -1,16 +1,17 @@
-import React from "react"
+import React, { useEffect } from "react"
 import styled from "styled-components"
 
-import useLocalStorage from "react-use-localstorage"
-
-// import useLocalState from "../hooks/hooks"
+import useLocalState from "../hooks/hooks"
 
 import Header from "./Header"
 import MobileHeader from "./MobileHeader"
 import ThemeIcon from "./ThemeIcon"
 
 const Layout = ({ children }) => {
-  const [theme, setTheme] = useLocalStorage("theme", "Initial Theme")
+  const [theme, setTheme] = useLocalState("theme")
+  useEffect(() => {
+    console.log("Layout...theme updated: ", theme)
+  }, [theme, setTheme])
 
   console.log("Layout...theme: ", theme)
 
@@ -33,7 +34,7 @@ const Layout = ({ children }) => {
       : currentTheme === "themeGrey"
       ? "#777777"
       : currentTheme === "themeDark"
-      ? "#000000"
+      ? "#333333"
       : "#e5e5e5"};
     color: ${theme === "themeLight"
       ? "#000"
