@@ -3,7 +3,9 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 const Nav = props => {
+  console.log(props)
   const data = props.pageContext
+  console.log(props.pageContext)
 
   function LinkToNextPage() {
     if (data.next === null) {
@@ -130,7 +132,7 @@ const Nav = props => {
   }
 
   const NavStyles = styled.div`
-    left: -3vh;
+    left: 0;
     position: fixed;
     top: 90vh;
     .next-selector {
@@ -141,6 +143,9 @@ const Nav = props => {
     }
     svg {
       transform: scale(0.6);
+    }
+    @media (max-width: 414px) {
+      left: -5vw;
     }
   `
 

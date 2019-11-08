@@ -17,15 +17,19 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return graphql(`
     {
-      allMarkdownRemark(sort: { fields: frontmatter___id, order: ASC }) {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/projects/" } }
+        sort: { fields: frontmatter___id, order: ASC }
+      ) {
         edges {
           node {
-            id
             fields {
               slug
             }
             frontmatter {
+              title
               templateKey
+              hex
             }
           }
         }
@@ -36,20 +40,13 @@ exports.createPages = ({ graphql, actions }) => {
 
     dataSort.forEach(({ node }, index) => {
       pathName = node.fields.slug
-      component = path.resolve(
-        `src/templates/${String(node.frontmatter.templateKey)}.js`
-      )
-      if (node.frontmatter.templateKey === "projectTemplate") {
-        context = {
-          slug: node.fields.slug,
-          previous: index === 0 ? null : dataSort[index - 1].node,
-          next: index === dataSort.length - 1 ? null : dataSort[index + 1].node,
-        }
-      } else {
-        context = {
-          slug: node.fields.slug,
-        }
+      component = path.resolve(`src/templates/projectTemplate.js`)
+      context = {
+        slug: node.fields.slug,
+        previous: index === 0 ? null : dataSort[index - 1].node,
+        next: index === dataSort.length - 1 ? null : dataSort[index + 1].node,
       }
+
       createPage({
         path: pathName,
         component: component,

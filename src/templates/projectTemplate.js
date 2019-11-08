@@ -10,13 +10,13 @@ const ProjectTemplate = ({ data, pageContext }) => {
   const ProjectWrapper = styled.div`
     height: 100%;
     overflow: scroll;
-    padding-top: 5rem;
+    margin-top: 5rem;
     width: 100vw;
     @media (max-width: 980px) {
-      padding-top: 6.5rem;
+      margin-top: 6.5rem;
     }
     @media (max-width: 375px) {
-      padding-top: 5.5rem;
+      margin-top: 5.5rem;
     }
   `
 
@@ -120,7 +120,7 @@ const ProjectTemplate = ({ data, pageContext }) => {
     align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
-    height: auto;
+    height: fit-content;
     justify-content: space-between;
     margin: 5rem auto 0 auto;
     position: relative;
@@ -176,7 +176,7 @@ const ProjectTemplate = ({ data, pageContext }) => {
         display: none;
       }
     }
-    @media (max-width: 375px) {
+    @media (max-width: 414px) {
       margin-top: 4rem;
       .desktop-image {
         width: 80%;
@@ -189,11 +189,17 @@ const ProjectTemplate = ({ data, pageContext }) => {
       }
       p {
         font-size: 15px;
-        left: 10%;
+        left: 5%;
         position: absolute;
         text-align: left;
         top: 43%;
         width: 45%;
+      }
+    }
+    @media (max-width: 320px) {
+      overflow: scroll;
+      p {
+        width: 40%;
       }
     }
   `

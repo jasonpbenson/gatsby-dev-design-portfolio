@@ -26,11 +26,18 @@ const ThemeIcon = props => {
         transform: scale(0.8);
       }
     }
-    @media (max-width: 375px) {
+    @media (max-width: 414px) {
       left: 65%;
-      top: 82%;
+      top: 83%;
       svg {
         transform: scale(0.9);
+      }
+    }
+    @media (max-width: 320px) {
+      left: 62%;
+      top: 84%;
+      svg {
+        transform: scale(0.6);
       }
     }
   `

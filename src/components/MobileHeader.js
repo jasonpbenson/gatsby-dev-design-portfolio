@@ -39,6 +39,14 @@ const MobileHeaderSyles = styled.div`
       width: 40px;
     }
   }
+  @media (max-width: 320px) {
+    h1 {
+      font-size: 20px;
+    }
+    img {
+      width: 30px;
+    }
+  }
 `
 
 const MobileHeader = () => {
@@ -47,7 +55,7 @@ const MobileHeader = () => {
       <Link to="/">
         <h1>jason paul benson</h1>
       </Link>
-      <Link to="/Information">
+      <Link to="/information">
         <img src={MobileButton} alt="mobile info button" />
       </Link>
     </MobileHeaderSyles>

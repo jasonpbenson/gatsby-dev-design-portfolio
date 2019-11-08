@@ -48,7 +48,7 @@ const Header = () => {
         <Link to="/">jason paul benson</Link>
       </h1>
       <h2>
-        <Link to="/Information">information</Link>
+        <Link to="/information">information</Link>
       </h2>
     </HeaderSyles>
   )
